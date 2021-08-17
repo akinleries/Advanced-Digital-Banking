@@ -29,6 +29,8 @@ public class AccountTest {
     kingsleyAccount.setTypeOfAccount(AccountType.SAVINGS);
     kingsleyAccount.setBalance(new BigDecimal(5000));
     kingsleyAccount.setAccountPin("1000");
+    kingsleyAccount.setAccountNumber(BankService.generateAccountNumber());
+    kingsley.getAccounts().add(kingsleyAccount);
 
     assertTrue(CustomerRepo.getCustomers().isEmpty());
 

@@ -10,6 +10,14 @@ public class Account {
     private BigDecimal balance;
     private String accountPin;
 
+    public Account(int i, AccountType savings) {
+    }
+
+//    public Account(long accountNumber, AccountType accountTypes) {
+//       this.accountNumber = accountNumber;
+//       this.typeOfAccount = accountTypes;
+//    }
+
     public long getAccountNumber() {
         return accountNumber;
     }
